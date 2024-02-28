@@ -36,23 +36,13 @@ Nije potrebno riješiti sva 4 zadatka ukoliko ne znate ili ne stignete ali molim
 
 3. zadatak
 
-Modelirati podatke sa slike u PHP klasi i napisati HTML/CSS potreban za prikaz tih podataka u obliku kao na slici.
-
-
-Poslati PHP/HTML/CSS kod kao prilog e-maila odgovora
-
+   * Modelirati podatke sa slike u PHP klasi i napisati HTML/CSS potreban za prikaz tih podataka u obliku kao na slici.
+   * Poslati PHP/HTML/CSS kod kao prilog e-maila odgovora
 
 4. zadatak
-Na URL-u "https://api.adriatic.hr/test/it?user=620" uz GET parametar naziva "user" i uz vrijednost "620" se vraća podatak "pass" potreban za dohvat zadatka.
-
-Parametar "pass" je validan 3 sekunde pa je dohvat zadatka potrebno napraviti kroz skriptu da "pass" ne istekne.
-
-Zadatak se dohvaća preko istog URL-a ("https://api.adriatic.hr/test/it?user=???&pass=???") uz ispravno definirane GET parametre "user" i "pass".
-
-Zadatak je file u "odt" formatu (https://en.wikipedia.org/wiki/OpenDocument).
-
-
-U samom zadatku piše kako ćete poslati odgovor.
-
-Pozdrav,
-
+   
+   * Na URL-u "https://api.adriatic.hr/test/it?user=620" uz GET parametar naziva "user" i uz vrijednost "620" se vraća podatak "pass" potreban za dohvat zadatka.
+   * Parametar "pass" je validan 3 sekunde pa je dohvat zadatka potrebno napraviti kroz skriptu da "pass" ne istekne.
+   * Zadatak se dohvaća preko istog URL-a ("https://api.adriatic.hr/test/it?user=???&pass=???") uz ispravno definirane GET parametre "user" i "pass".
+   * Zadatak je file u "odt" formatu (https://en.wikipedia.org/wiki/OpenDocument).
+   * U samom zadatku piše kako ćete poslati odgovor.
