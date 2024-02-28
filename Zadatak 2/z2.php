@@ -15,7 +15,6 @@ function find($arrayA, $arrayB, $arrayC) {
     echo "samo u nizu \$arrayC = " . json_encode(array_values($uniqueC)) . PHP_EOL;
 }
 
-// Primjer korištenja
 $arrayA = ['a', 'b', 'c', 'dd', '234', '22', 'rc'];
 $arrayB = ['a', 'b2', 'c', 'dad', 'rc', '24', '222'];
 $arrayC = ['222', 'a', 'be', 'rc', '234', '22', 'pp'];
