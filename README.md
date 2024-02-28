@@ -1,16 +1,6 @@
 
 # Prvi korak selekcije - zadatak (Adriatic.hr)
 
-Pozdrav i hvala što ste se prijavili na naše oglase za radna mjesta.
-
-
-Kao prvi korak selekcije šaljem Vam grupu kraćih zadataka kroz koje želim vidjeti kako izgleda PHP kȏd koji pišete.
-
-Molim da na sve obratite pozornost, od logike, tehnike do urednosti.
-Molim da mi odgovore pošaljete do ponedjeljka (04.03.2024.) do 12:00.
-
-Nije potrebno riješiti sva 4 zadatka ukoliko ne znate ili ne stignete ali molim da mi napišete razlog nerješavanja.
-
 1. zadatak
 
     * Napraviti metodu koja će najoptimalniji način u zadanom nizu pronaći brojeve najbliže traženom broju.
