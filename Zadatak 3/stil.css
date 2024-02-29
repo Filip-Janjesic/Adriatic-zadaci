@@ -1,0 +1,68 @@
+body {
+h2 {
+	text-align: center;
+	color: #000; 
+	text-transform: uppercase;
+	font: Arial;
+	font-size: 30px;
+
+}
+
+.prvired, .drugired{
+	display: inline-flex;
+	width:100%
+} 
+.usluga, .cijena, .kolicina, .ukupno{
+	text-align: center;
+	color: #000;
+	font: Arial;
+	font-size: 20px;
+	background-color: #85d0e0;
+	font-weight: bold;
+	border: 1.5px solid #135e96;
+	height: 40px;
+	padding: 10px 10px 0px 10px;
+}
+.usluga {
+	width: 40%;
+}
+.kolicina {
+	width: 30%;
+}
+
+.cijena, .ukupno {
+	width: 15%;
+}
+.brojrezervacije, .datum, .brojosoba, .cijenaeuri, .nocenje, .ukupnoeuri {
+	text-align: center;
+	color: #000;
+	font: Arial;
+	font-size: 20px;
+	background-color: #0000;
+	border: 1.5px solid #135e96;
+	height: 40px;
+	padding: 10px 10px 0px 10px;
+}
+
+.brojrezervacije {
+	font-weight: bold;
+	width: 10%;
+}
+
+.datum {
+	width: 18%;
+}
+
+.brojosoba {
+	width: 7%;
+}
+
+.cijenaeuri, ukupnoeuri {
+	width: 15%;
+}
+
+.nocenje {
+	width: 30%;
+}
+}
+
