@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +8,12 @@
 	<title></title>
 </head>
 <body>
-<h2>PREDRAČUN BR. 2022-16950-63 ZA USLUGU SMJEŠTAJA</h2>
+
+<?php
+include 'podaci.php';
+?>
+
+<h2>PREDRAČUN BR. <?php echo $brojrezervacije; ?> ZA USLUGU SMJEŠTAJA</h2>
 
 <div class="prvired">
 	<div class="usluga">Usluga</div>
@@ -17,12 +23,12 @@
 </div>
 
 <div class="drugired">
-	<div class="brojrezervacije"></div>
+	<div class="brojrezervacije"><?php echo $usluga; ?></div>
 	<div class="datum"></div>
-	<div class="brojosoba"></div>
-	<div class="cijenaeuri"></div>
-	<div class="nocenje"></div>
-	<div class="ukupnoeuri"></div>
+	<div class="brojosoba"><?php echo $kolicinaOsoba; ?></div>
+	<div class="cijenaeuri"><?php echo $cijenaPoNocenju; ?> €</div>
+	<div class="nocenje"><?php echo $brojNocenja; ?></div>
+	<div class="ukupnoeuri"><?php echo $ukupnoUsluga; ?> €</div>
 </div>
 
 <div class="trecired">
@@ -31,7 +37,7 @@
 
 <div class="cetvrtired">
 	<div class="ukupno1">Ukupno</div>
-	<div class="ukupno2"></div>
+	<div class="ukupno2"><?php echo $ukupnoUsluga; ?> €</div>
 </div>
 
 <div>
@@ -49,17 +55,17 @@
 </div>
 
 <div class="drugired">
-	<div class="predujam">11111</div>
-	<div class="kartica">1111</div>
-	<div class="vrijemepredujma">1111111</div>
-	<div class="iznospredujma">11111</div>
+	<div class="predujam"><?php echo $akontacijaNačinPlaćanja; ?></div>
+	<div class="kartica">  <?php echo $akontacijaNačinPlaćanja; ?> </div>
+	<div class="vrijemepredujma"><?php echo $akontacijaVrijemePlaćanja; ?></div>
+	<div class="iznospredujma"><?php echo $akontacijaIznos; ?> €</div>
 </div>
 
 <div class="trecired">
-	<div class="ostatak">1111111</div>
-	<div class="kartica">111111</div>
-	<div class="vrijemeostatka">111111</div>
-	<div class="iznosostatka">111111</div>
+	<div class="ostatak"><?php echo $ostatakNačinPlaćanja; ?></div>
+	<div class="kartica"> <?php echo $ostatakNačinPlaćanja; ?> </div>
+	<div class="vrijemeostatka"><?php echo $ostatakVrijemePlaćanja; ?></div>
+	<div class="iznosostatka"><?php echo $ostatakIznos; ?> €</div>
 </div>
 
 <div>
