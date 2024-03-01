@@ -152,31 +152,38 @@ h2 {
 }
 
 .predujam{
+	text-align: left;
 	font-weight: bold;
 	width: 20%;
 }
 .kartica{
+	text-align: center;
 	font-weight: bold;
 	width: 30%;
 }
 .vrijemepredujma{
+	text-align: center;
 	font-weight: bold;
 	width: 30%;
 }
 .iznospredujma{
+	text-align: right;
 	font-weight: bold;
 	width: 20%;
 }
 
 .ostatak{
+	text-align: left;
 	font-weight: bold;
 	width: 20%;
 }
 .vrijemeostatka{
+	text-align: center;
 	font-weight: bold;
 	width: 30%;
 }
 .iznosostatka{
+	text-align: right;
 	font-weight: bold;
 	width: 20%;
 }
