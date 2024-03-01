@@ -10,8 +10,12 @@ h2 {
 .prvired, .drugired, .trecired, .cetvrtired{
 	display: inline-flex;
 	width:100%;
-	margin:0px; 
+	height: 50px;
+	margin:0px;
+	display: flex;
+	border: 1.5px solid #135e96;
 } 
+
 .usluga, .cijena, .kolicina, .ukupno{
 	text-align: center;
 	color: #000;
@@ -59,7 +63,7 @@ h2 {
 	width: 7.85%;
 }
 
-.cijenaeuri, ukupnoeuri {
+.cijenaeuri {
 	width: 14.35%;
 }
 
@@ -69,17 +73,15 @@ h2 {
 
 .ukupnoeuri{
 	width: 14.3%;
+	background-color: #def0f8;;
 }
 
-.prazno {
-	width: 100%;
-	border: 1.5px solid #135e96;
-	height: 40px;
-	padding: 10px 10px 0px 10px;
-	margin:0px; 
+.trecired {
+	height: 50px;
 }
+
 .ukupno1 {
-	width: 85%;
+	width: 88%;
 	text-align: left;
 	color: #000;
 	font: Arial;
@@ -91,5 +93,93 @@ h2 {
 	padding: 10px 10px 0px 10px;
 	margin:0px; 
 }
+
+.ukupno2{
+	width: 15%;
+	text-align: left;
+	color: #000;
+	font: Arial;
+	font-size: 20px;
+	background-color: #85d0e0;
+	font-weight: bold;
+	border: 1.5px solid #135e96;
+	height: 40px;
+	padding: 10px 10px 0px 10px;
+	margin:0px; 
 }
+
+.uplata, .nacinplacanja, .vrijemeplacanja, .iznos{
+	text-align: center;
+	color: #000;
+	font: Arial;
+	font-size: 20px;
+	background-color: #85d0e0;
+	font-weight: bold;
+	border: 1.5px solid #135e96;
+	height: 40px;
+	padding: 10px 10px 0px 10px;
+	margin:0px; 
+}
+
+.uplata{
+	font-weight: bold;
+	width: 20%;
+}
+.nacinplacanja{
+	font-weight: bold;
+	width: 30%;
+}
+.vrijemeplacanja{
+	font-weight: bold;
+	width: 30%;
+}
+.iznos{
+	font-weight: bold;
+	width: 20%;
+}
+
+
+.predujam, .kartica, .vrijemepredujma, .iznospredujma, .ostatak, .vrijemeostatka, .iznosostatka{
+	text-align: left;
+	color: #000;
+	font: Arial;
+	font-size: 20px;
+	font-weight: bold;
+	border: 1.5px solid #135e96;
+	height: 40px;
+	padding: 10px 10px 0px 10px;
+	margin:0px;
+}
+
+.predujam{
+	font-weight: bold;
+	width: 20%;
+}
+.kartica{
+	font-weight: bold;
+	width: 30%;
+}
+.vrijemepredujma{
+	font-weight: bold;
+	width: 30%;
+}
+.iznospredujma{
+	font-weight: bold;
+	width: 20%;
+}
+
+.ostatak{
+	font-weight: bold;
+	width: 20%;
+}
+.vrijemeostatka{
+	font-weight: bold;
+	width: 30%;
+}
+.iznosostatka{
+	font-weight: bold;
+	width: 20%;
+}
+}
+
 
