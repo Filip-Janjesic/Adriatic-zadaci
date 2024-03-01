@@ -5,12 +5,12 @@ h2 {
 	text-transform: uppercase;
 	font: Arial;
 	font-size: 30px;
-
 }
 
-.prvired, .drugired{
+.prvired, .drugired, .trecired, .cetvrtired{
 	display: inline-flex;
-	width:100%
+	width:100%;
+	margin:0px; 
 } 
 .usluga, .cijena, .kolicina, .ukupno{
 	text-align: center;
@@ -22,6 +22,7 @@ h2 {
 	border: 1.5px solid #135e96;
 	height: 40px;
 	padding: 10px 10px 0px 10px;
+	margin:0px; 
 }
 .usluga {
 	width: 40%;
@@ -42,6 +43,7 @@ h2 {
 	border: 1.5px solid #135e96;
 	height: 40px;
 	padding: 10px 10px 0px 10px;
+	margin:0px; 
 }
 
 .brojrezervacije {
@@ -54,7 +56,7 @@ h2 {
 }
 
 .brojosoba {
-	width: 7.8%;
+	width: 7.85%;
 }
 
 .cijenaeuri, ukupnoeuri {
@@ -67,6 +69,27 @@ h2 {
 
 .ukupnoeuri{
 	width: 14.3%;
+}
+
+.prazno {
+	width: 100%;
+	border: 1.5px solid #135e96;
+	height: 40px;
+	padding: 10px 10px 0px 10px;
+	margin:0px; 
+}
+.ukupno1 {
+	width: 85%;
+	text-align: left;
+	color: #000;
+	font: Arial;
+	font-size: 20px;
+	background-color: #85d0e0;
+	font-weight: bold;
+	border: 1.5px solid #135e96;
+	height: 40px;
+	padding: 10px 10px 0px 10px;
+	margin:0px; 
 }
 }
 
