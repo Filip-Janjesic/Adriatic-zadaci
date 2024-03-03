@@ -15,15 +15,15 @@ include 'podaci.php';
 <h2>PREDRAČUN BR. <?php echo $brojrezervacije; ?> ZA USLUGU SMJEŠTAJA</h2>
 
 <div class="prvired">
-	<div class="usluga">Usluga</div>
-	<div class="cijena">Cijena</div>
-	<div class="kolicina">Količina</div>
-	<div class="ukupno">Ukupno</div>
+	<div class="usluga" style="font-weight: bold;">Usluga</div>
+	<div class="cijena" style="font-weight: bold;">Cijena</div>
+	<div class="kolicina" style="font-weight: bold;">Količina</div>
+	<div class="ukupno" style="font-weight: bold;">Ukupno</div>
 </div>
 
 <div class="drugired">
-	<div class="brojrezervacije"><?php echo $usluga; ?></div>
-	<div class="datum"></div>
+	<div class="brojrezervacije" style="font-weight: bold;"><?php echo $usluga; ?></div>
+	<div class="datum"><?php echo $datum; ?></div>
 	<div class="brojosoba"><?php echo $kolicinaOsoba; ?></div>
 	<div class="cijenaeuri"><?php echo $cijenaPoNocenju; ?> €</div>
 	<div class="nocenje"><?php echo $brojNocenja; ?></div>
@@ -35,8 +35,8 @@ include 'podaci.php';
 </div>
 
 <div class="cetvrtired">
-	<div class="ukupno1">Ukupno</div>
-	<div class="ukupno2"><?php echo $ukupnoUsluga; ?> €</div>
+	<div class="ukupno1" style="font-weight: bold;">Ukupno</div>
+	<div class="ukupno2" style="font-weight: bold;"><?php echo $ukupnoUsluga; ?> €</div>
 </div>
 
 <div>
@@ -47,24 +47,24 @@ include 'podaci.php';
 
 <h2>DINAMIKA PLAĆANJA</h2>
 <div class="prvired">
-	<div class="uplata">Uplata</div>
-	<div class="nacinplacanja">Način plaćanja</div>
-	<div class="vrijemeplacanja">Vrijeme plaćanja</div>
-	<div class="iznos">Iznos</div>
+	<div class="uplata" style="font-weight: bold;">Uplata</div>
+	<div class="nacinplacanja" style="font-weight: bold;">Način plaćanja</div>
+	<div class="vrijemeplacanja" style="font-weight: bold;">Vrijeme plaćanja</div>
+	<div class="iznos" style="font-weight: bold;">Iznos</div>
 </div>
 
 <div class="drugired">
-	<div class="predujam">Akontacija</div>
+	<div class="predujam" style="font-weight: bold;">Akontacija</div>
 	<div class="kartica">  <?php echo $akontacijaNačinPlaćanja; ?> </div>
 	<div class="vrijemepredujma"><?php echo $akontacijaVrijemePlaćanja; ?></div>
-	<div class="iznospredujma"><?php echo $akontacijaIznos; ?> €</div>
+	<div class="iznospredujma" style="font-weight: bold;"><?php echo $akontacijaIznos; ?> €</div>
 </div>
 
 <div class="trecired">
-	<div class="ostatak">Ostatak iznosa</div>
+	<div class="ostatak" style="font-weight: bold;">Ostatak iznosa</div>
 	<div class="kartica"> <?php echo $ostatakNačinPlaćanja; ?> </div>
 	<div class="vrijemeostatka"><?php echo $ostatakVrijemePlaćanja; ?></div>
-	<div class="iznosostatka"><?php echo $ostatakIznos; ?> €</div>
+	<div class="iznosostatka" style="font-weight: bold;"><?php echo $ostatakIznos; ?> €</div>
 </div>
 
 <div>
