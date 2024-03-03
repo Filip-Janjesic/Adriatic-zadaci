@@ -34,53 +34,39 @@
             <th>Cijena u nabavi</th>
             <th>Krajnji rok nabave</th>
         </tr>
+        <?php
+            include 'skladiste.php';
+            $database = new mysqli('localhost', 'korisnik', 'lozinka', 'naziv_baze');
+            if ($database->connect_error) {
+                die("Povezivanje s bazom podataka nije uspjelo: " . $database->connect_error);
+            }
+
+            $skladiste = new Skladiste($database);
+            $artikli = $skladiste->getArtikli();
+
+            foreach ($artikli as $artikl) {
+                echo '<tr>';
+                echo '<td>' . $artikl->naziv . '</td>';
+                echo '<td>' . $artikl->stanjeSkladiste . '</td>';
+                echo '<td>' . $artikl->cijena . ' €/kg</td>';
+                echo '<td style="text-align: center">' . $artikl->potrebnoNabaviti . '</td>';
+                echo '<td style="text-align: center">' . $artikl->cijenaUNabavi . ' €/kg</td>';
+                echo '<td>' . $artikl->krajnjiRokNabave . '</td>';
+                echo '</tr>';
+            }
+        ?>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>paprika</td>
-            <td>1225,25 kg</td>
-            <td>0,89 €/kg</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">-</td>
-        </tr>
-        <tr>
-            <td>krumpir crveni</td>
-            <td>600 kg</td>
-            <td>0,57</td>
-            <td>3000 kg</td>
-            <td>0,35 €/kg</td>
-            <td>2024-08-24</td>
-        </tr>
-        <tr>
-            <td>krumpir žuti</td>
-            <td>0 kg</td>
-            <td style="text-align: center">-</td>
-            <td>1200 kg</td>
-            <td>0,48 €/kg</td>
-            <td>2024-06-12</td>
-        </tr>
-        <tr>
-            <td>krumpir mladi</td>
-            <td>260,83 kg</td>
-            <td>0,94 €/kg</td>
-            <td>6500 kg</td>
-            <td>0,50 €/kg</td>
-            <td>2024-04-15</td>
-        </tr>
-        <tr>
-            <td>žarulja 20W</td>
-            <td>250 komada</td>
-            <td>2,74 €/komad</td>
-            <td>300 komada</td>
-            <td>1,25 € komad</td>
-            <td>2024-04-20</td>
+            <td colspan="6">
+                <form method="post" action="unos_izmjene.php">
+                    <label for="nazivArtikla">Naziv artikla:</label>
+                    <input type="text" name="nazivArtikla" required>
+
+                    <label for="novaKolicina">Nova količina:</label>
+                    <input type="number" name="novaKolicina" required>
+
+                    <input type="submit" value="Unesi izmjenu">
+                </form>
+            </td>
         </tr>
     </table>
 </body>
