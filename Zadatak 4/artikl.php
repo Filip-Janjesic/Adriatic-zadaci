@@ -1,6 +1,7 @@
 <?php
 
 class Artikl {
+    public $id;
     public $naziv;
     public $stanjeSkladiste;
     public $cijena;
@@ -8,7 +9,8 @@ class Artikl {
     public $cijenaUNabavi;
     public $krajnjiRokNabave;
 
-    public function __construct($naziv, $stanjeSkladiste, $cijena, $potrebnoNabaviti, $cijenaUNabavi, $krajnjiRokNabave) {
+    public function __construct($id, $naziv, $stanjeSkladiste, $cijena, $potrebnoNabaviti, $cijenaUNabavi, $krajnjiRokNabave) {
+        $this->id = $id;
         $this->naziv = $naziv;
         $this->stanjeSkladiste = $stanjeSkladiste;
         $this->cijena = $cijena;
