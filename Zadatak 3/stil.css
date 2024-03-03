@@ -38,6 +38,11 @@ h2 {
 .cijena, .ukupno {
 	width: 15%;
 }
+
+.ukupno {
+	text-align: right;
+}
+
 .brojrezervacije, .datum, .brojosoba, .cijenaeuri, .nocenje, .ukupnoeuri {
 	text-align: center;
 	color: #000;
@@ -73,7 +78,8 @@ h2 {
 
 .ukupnoeuri{
 	width: 14.3%;
-	background-color: #def0f8;;
+	background-color: #def0f8;
+	text-align: right;
 }
 
 .trecired {
@@ -139,7 +145,7 @@ h2 {
 }
 
 
-.predujam, .kartica, .vrijemepredujma, .iznospredujma, .ostatak, .vrijemeostatka, .iznosostatka{
+.predujam, .vrijemepredujma, .iznospredujma, .ostatak, .vrijemeostatka, .iznosostatka{
 	text-align: left;
 	color: #000;
 	font: Arial;
@@ -160,32 +166,63 @@ h2 {
 	text-align: center;
 	font-weight: bold;
 	width: 30%;
+	font: Arial;
+	font-size: 20px;
+	border: 1.5px solid #135e96;
+	height: 40px;
+	padding: 10px 10px 0px 10px;
+	margin:0px;
 }
 .vrijemepredujma{
 	text-align: center;
-	font-weight: bold;
 	width: 30%;
+	font: Arial;
+	font-size: 20px;
+	border: 1.5px solid #135e96;
+	height: 40px;
+	padding: 10px 10px 0px 10px;
+	margin:0px;
 }
 .iznospredujma{
 	text-align: right;
-	font-weight: bold;
 	width: 20%;
+	font: Arial;
+	font-size: 20px;
+	border: 1.5px solid #135e96;
+	height: 40px;
+	padding: 10px 10px 0px 10px;
+	margin:0px;
 }
 
 .ostatak{
 	text-align: left;
-	font-weight: bold;
 	width: 20%;
+	font: Arial;
+	font-size: 20px;
+	border: 1.5px solid #135e96;
+	height: 40px;
+	padding: 10px 10px 0px 10px;
+	margin:0px;
 }
 .vrijemeostatka{
 	text-align: center;
-	font-weight: bold;
 	width: 30%;
+	font: Arial;
+	font-size: 20px;
+	border: 1.5px solid #135e96;
+	height: 40px;
+	padding: 10px 10px 0px 10px;
+	margin:0px;
 }
 .iznosostatka{
 	text-align: right;
-	font-weight: bold;
 	width: 20%;
+	font: Arial;
+	font-size: 20px;
+	border: 1.5px solid #135e96;
+	height: 40px;
+	padding: 10px 10px 0px 10px;
+	margin:0px;
 }
 }
 
