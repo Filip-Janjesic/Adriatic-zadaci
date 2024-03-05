@@ -1,3 +1,14 @@
+<?php
+    include 'skladiste.php';
+    $database = new mysqli('localhost', 'korisnik', 'lozinka', 'naziv_baze');
+    if ($database->connect_error) {
+        die("Povezivanje s bazom podataka nije uspjelo: " . $database->connect_error);
+    }
+
+    $skladiste = new Skladiste($database);
+    $artikli = $skladiste->getArtikli();
+?>
+
 <!DOCTYPE html>
 <html lang="hr">
 <head>
@@ -34,16 +45,8 @@
             <th>Cijena u nabavi</th>
             <th>Krajnji rok nabave</th>
         </tr>
+
         <?php
-            include 'skladiste.php';
-            $database = new mysqli('localhost', 'korisnik', 'lozinka', 'naziv_baze');
-            if ($database->connect_error) {
-                die("Povezivanje s bazom podataka nije uspjelo: " . $database->connect_error);
-            }
-
-            $skladiste = new Skladiste($database);
-            $artikli = $skladiste->getArtikli();
-
             foreach ($artikli as $artikl) {
                 echo '<tr>';
                 echo '<td>' . $artikl->naziv . '</td>';
@@ -55,6 +58,7 @@
                 echo '</tr>';
             }
         ?>
+
         <tr>
             <td colspan="6">
                 <form method="post" action="unos_izmjene.php">
